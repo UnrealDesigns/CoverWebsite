@@ -39,7 +39,5 @@ Respective branches will be created in a future push
 
 		Folders and locations should be self explanatory.
 		
-	**REFER** : [AngularJS](http://angularjs.org)
-
 ##All the best !
 	
