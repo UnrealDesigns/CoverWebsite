@@ -1,0 +1,36 @@
+<div class="outer">
+	<div id="mainHeader">
+		<div id="logo">LOGO HERE</div>
+	</div>
+
+	<div id="navBar">
+		<ul>
+			<li ng-repeat="link in navLinks"><a href="{{link.href}}">{{link.name}}</a></li>
+		</ul>
+	</div>
+
+	<div id="featuredWrap">
+		<div id="featured">
+			Featured Content<br>
+		</div>
+	</div>
+
+	<div id="contentWrap">
+		<div id="content">
+			<div class="contentBlock" ng-repeat="block in contentBlocks">
+					<div class="contentImg">
+						<img src="#" alt="{{block.imagealt}}"/>
+					</div>
+					<div class="description">
+						<h2>{{block.title}}</h2>
+						<p>{{block.description}}</p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footerWrap">
+		<hr>
+		Copyright 2013 Unreal Designs
+	</div>
+</div>
