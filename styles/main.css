@@ -1,0 +1,92 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* Main CSS */
+body {
+  background-color: black;
+  color: white;
+  padding: 0px;
+  border: 0px;
+  margin: 0px; }
+
+.container {
+  padding: 20px;
+  padding-top: 0px;
+  width: 100%; }
+
+.outer {
+  border: 1px solid white;
+  margin: auto;
+  width: 960px;
+  position: relative; }
+
+#mainHeader {
+  height: 100px; }
+  #mainHeader #logo {
+    float: left;
+    line-height: 100px;
+    min-width: 300px;
+    min-height: 100%;
+    position: relative;
+    text-align: center;
+    background: url("images/logo.png") no-repeat; }
+
+#navBar {
+  position: relative;
+  padding: 5px;
+  border: green 1px solid;
+  text-align: center; }
+  #navBar ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: table; }
+    #navBar ul li {
+      display: table-cell;
+      width: 25%;
+      height: 100%;
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase; }
+
+#featuredWrap {
+  clear: both;
+  padding: 20px;
+  position: relative;
+  background: #777777; }
+  #featuredWrap #featured {
+    margin: auto;
+    width: 880px;
+    vertical-align: middle;
+    border: 1px red solid; }
+
+#contentWrap {
+  clear: both;
+  padding: 20px;
+  position: relative;
+  background: #c6c6c6; }
+  #contentWrap #content {
+    margin: auto;
+    width: 900px;
+    vertical-align: middle;
+    border: 1px red solid; }
+    #contentWrap #content .contentBlock {
+      padding: 10px;
+      border: blue 1px solid;
+      width: 100%; }
+      #contentWrap #content .contentBlock .contentImg {
+        display: inline-block;
+        width: 40%; }
+      #contentWrap #content .contentBlock .description {
+        display: inline-block; }
+
+#footerWrap {
+  clear: both;
+  padding: 20px;
+  position: relative;
+  color: #FFFFFF; }
