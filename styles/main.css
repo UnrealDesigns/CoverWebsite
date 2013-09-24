@@ -8,21 +8,40 @@ body {
   color: white;
   padding: 0px;
   border: 0px;
-  margin: 0px; }
+  margin: 0px;
+  position: relative;
+  top: 0px; }
 
 .container {
-  padding: 20px;
-  padding-top: 0px;
   width: 100%; }
 
-.outer {
-  border: 1px solid white;
-  margin: auto;
+.content {
+  clear: both;
   width: 1280px;
-  position: relative; }
+  margin: auto;
+  padding: 10px; }
+
+#headerWrap {
+  clear: both;
+  width: 100%;
+  background-color: black; }
+  #headerWrap #header {
+    padding: 20px;
+    padding-top: 0px; }
+
+#bodyWrap {
+  clear: both;
+  width: 100%;
+  background-color: white; }
+  #bodyWrap #body {
+    padding: 20px;
+    padding-top: 0px; }
 
 #footerWrap {
   clear: both;
-  padding: 20px;
-  position: relative;
-  color: #FFFFFF; }
+  width: 100%;
+  background-color: black; }
+  #footerWrap #footer {
+    padding: 20px;
+    padding-top: 0px;
+    color: #FFFFFF; }

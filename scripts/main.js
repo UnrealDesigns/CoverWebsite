@@ -7,5 +7,9 @@ angular.module('cover', ['ngRoute', 'ngAnimate', 'ngSanitize']).config(function(
 });
 
 function MainCtrl($scope, $http){
-	$scope.name = "Vikrant"
+	baseURL = "";
+	$http.get(baseURL+'scripts/data.json').then(function(response){
+		$scope.data = response.data;
+		console.log($scope.data);
+	});
 }

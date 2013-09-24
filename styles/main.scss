@@ -9,26 +9,52 @@ body{
 	padding: 0px;
 	border: 0px;
 	margin: 0px;
+	position: relative;
+	top: 0px;
 }
 
 .container{
-	padding: 20px;
-	padding-top: 0px;
 	width: 100%;
 }
 
-.outer{
-	border: 1px solid white;
-	margin: auto;
+.content{
+	clear: both;
 	width: 1280px;
-	position: relative;
+	margin: auto;
+	padding: 10px;
 }
 
+#headerWrap{
+	clear:both;
+	width: 100%;
+	background-color: black;
 
+	#header{
+		padding: 20px;
+		padding-top: 0px;
+	}
+}
+
+#bodyWrap{
+	clear:both;
+	width: 100%;
+	background-color: white;
+
+	#body{
+		padding: 20px;
+		padding-top: 0px;
+	}
+
+}
 
 #footerWrap{
 	clear: both;
-	padding: 20px;
-	position: relative;
-	color: #FFFFFF;
+	width: 100%;
+	background-color: black;
+
+	#footer{
+		padding: 20px;
+		padding-top: 0px;
+		color: #FFFFFF;
+	}
 }
