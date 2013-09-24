@@ -1,3 +1,14 @@
 {
-    "name": "Vikrant"
+    "name": "Vikrant",
+    "headerLinks": [
+    				{"title": "Products", "href": "#/products"}, 
+    				{"title": "About US", "href": "#/aboutus"},
+    				{"title": "Contact", "href": "#/contact"}, 
+    				{"title": "Services", "href": "#/services"}
+    			],
+    "services": [
+    				{"title": "Design", "href": "#/services", "img": "images/placeholder.png"}, 
+    				{"title": "Develop", "href": "#/services", "img": "images/placeholder.png"},
+    				{"title": "Deploy", "href": "#/services", "img": "images/placeholder.png"}
+    			]
 }

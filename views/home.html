@@ -1,19 +1,37 @@
 <div class="outer">
 	<div id="headerWrap">
 		<header class="content">
-			<div id="logo"><img src="images/logo.png" alt="Unreal Designs"></div>
+			<ul>
+				<li></li>
+				<li id="logo"><img src="images/logo.png" alt="Unreal Designs"></li>
+				<li ng-repeat="i in [1,2]"></li>
+				<li ng-repeat="link in data.headerLinks">{{link.title}}</li>
+				<li></li>
+			</ul>
 		</header>
 	</div>
 
-	<div id="bodyWrap">
-		<div id="body" class="content">
-			Hello, {{data.name}} !
+	<div id="coverWrap">
+		<div id="cover" class="content">
+			<div id="coverImg">
+				<img src="images/mobile_large.png" alt="Main Image">
+			</div>
+
+			<ul id="services">
+				<li ng-repeat="i in [1,2]"></li>
+				<li ng-repeat="service in data.services">
+					<div class="service">
+						<img src="{{service.img}}"></img>
+						<span class="desc">{{service.title}}<span>
+					</div>
+				</li>
+				<li ng-repeat="i in [1,2]"></li>
+			</ul>
 		</div>
 	</div>
 
 	<div id="footerWrap">
 		<footer id="footer" class="content">
-			<hr>
 			Copyright 2013 Unreal Designs
 		</footer>
 	</div>
