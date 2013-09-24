@@ -20,94 +20,11 @@ body{
 .outer{
 	border: 1px solid white;
 	margin: auto;
-	width: 960px;
+	width: 1280px;
 	position: relative;
 }
 
 
-#mainHeader{
-	height: 100px;
-	#logo{
-		float: left;
-		line-height: 100px;
-		min-width: 300px;
-		min-height: 100%;
-		position: relative;
-		text-align: center;
-		background: url('images/logo.png') no-repeat;
-	}
-}
-
-#navBar{
-	position: relative;
-	padding: 5px;
-	border: green 1px solid;
-	text-align: center;
-
-	ul{
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	display: table;
-		li{
-			$navLinks: 4;
-			display: table-cell;
-			width: (100%/$navLinks);
-			height: 100%;
-			float: left;
-			font-weight: bold;
-			text-transform: uppercase;
-		}
-	}
-}
-
-
-#featuredWrap{
-	clear: both;
-	padding: 20px;
-	position: relative;
-	background: #777777;
-
-	#featured{
-		margin: auto;
-		width: 880px;
-		vertical-align: middle;
-		border: 1px red solid;
-	}
-}
-
-#contentWrap{
-	clear: both;
-	padding: 20px;
-	position: relative;
-	background: #c6c6c6;
-
-	#content{
-		margin: auto;
-		width: 900px;
-		vertical-align: middle;
-		border: 1px red solid;
-
-		.contentBlock{
-			padding: 10px;
-			border: blue 1px solid;
-			width: 100%;
-
-			.contentImg{
-				display: inline-block;
-				width: 40%;
-			}
-
-			.description{
-				display: inline-block;
-			}
-		}
-	}
-}
 
 #footerWrap{
 	clear: both;
