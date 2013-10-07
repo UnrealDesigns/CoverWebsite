@@ -30,6 +30,27 @@
 		</div>
 	</div>
 
+	<div id="introWrap">
+		<div id="intro" class="content">
+			<h2>{{data.intro.title}}</h2>
+			<img src="placeholder.png" alt="Introduction">
+			<p>
+				{{data.intro.desc}}
+			</p>
+		</div>
+	</div>
+
+	<div id="productWrap">
+		<ul id="products" class="content">
+			<li></li>
+			<li ng-repeat="product in data.products">
+				<div class="face front">{{product.front}}</div>
+				<!-- <div class="face back">{{product.back}}</div> -->
+			</li>
+			<li></li>
+		</ul>
+	</div>
+
 	<div id="footerWrap">
 		<footer id="footer" class="content">
 			Copyright 2013 Unreal Designs
