@@ -5,7 +5,7 @@
 				<li></li>
 				<li id="logo"><img src="images/logo.png" alt="Unreal Designs"></li>
 				<li ng-repeat="i in [1,2]"></li>
-				<li ng-repeat="link in data.headerLinks">{{link.title}}</li>
+				<li ng-repeat="link in data.headerLinks" ng-click="goTo(link.href)">{{link.title}}</li>
 				<li></li>
 			</ul>
 		</header>
@@ -51,9 +51,46 @@
 		</ul>
 	</div>
 
+	<div id="aboutWrap">
+		<div id="about" class="content">
+			<h2>{{data.about.title}}</h2>
+			<img src="placeholder.png" alt="About US">
+			<p>
+				{{data.about.desc}}
+			</p>
+		</div>
+	</div>
+
+	<div id="teamWrap">
+		<div id="team" class="content">
+			<h2>Our Team</h2>
+		</div>
+	</div>
+
 	<div id="footerWrap">
 		<footer id="footer" class="content">
-			Copyright 2013 Unreal Designs
+			<ul id="sections">
+				<li><img class="logo" src="images/logo.png" alt="Unreal Designs"></li>
+				<li class="address"><h3> Address </h3> dummy text heredummy text heredummy text heredummy text here</li>
+				<li class="contact">
+					<h3>Contact US</h3> 
+					<button> Email US </button>
+					<br>
+					<ul class="social">
+						<li>F</li>
+						<li>T</li>
+						<li>P</li>
+					</ul>
+				</li>
+				<li>
+					<h3>LEGAL</h3>
+					<br>
+					<ul class="legal">
+						<li>Terms</li>
+						<li>Privacy Policy</li>
+					</ul>
+				</li>
+			</ul>
 		</footer>
 	</div>
 </div>
