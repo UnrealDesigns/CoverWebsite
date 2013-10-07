@@ -6,6 +6,16 @@ angular.module('cover', ['ngRoute', 'ngAnimate', 'ngSanitize']).config(function(
 		otherwise({redirectTo:'/'});
 });
 
-function MainCtrl($scope, $http){
-	$scope.name = "Vikrant"
+function MainCtrl($scope, $http, $location, $anchorScroll){
+	baseURL = "";
+	$http.get(baseURL+'scripts/data.json').then(function(response){
+		$scope.data = response.data;
+		console.log($scope.data);
+	});
+
+	$scope.goTo = function(elementId){
+		console.log(elementId);
+		$location.hash(elementId);
+		$anchorScroll();
+	}
 }

@@ -1,0 +1,22 @@
+{
+    "name": "Vikrant",
+    "headerLinks": [
+    				{"title": "Products", "href": "products"}, 
+    				{"title": "About US", "href": "intro"},
+    				{"title": "Contact", "href": "footer"}, 
+    				{"title": "Services", "href": "cover"}
+    			],
+    "services": [
+    				{"title": "Design", "href": "#/services", "img": "images/placeholder.png"}, 
+    				{"title": "Develop", "href": "#/services", "img": "images/placeholder.png"},
+                    {"title": "Deploy", "href": "#/services", "img": "images/placeholder.png"}
+    			],
+    "intro": {"title": "Introduction", "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset."},
+    "products": [
+                    {"front": "PRODUCT 1", "back": "Brief Description 1"},
+                    {"front": "PRODUCT 2", "back": "Brief Description 2"},
+                    {"front": "PRODUCT 3", "back": "Brief Description 3"},
+                    {"front": "PRODUCT 4", "back": "Brief Description 4"}
+                ],
+    "about": {"title": "About US", "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset."}
+}

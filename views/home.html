@@ -1,10 +1,96 @@
 <div class="outer">
-	<div id="mainHeader">
-		<div id="logo">Hello, {{name}} !</div>
+	<div id="headerWrap">
+		<header class="content">
+			<ul>
+				<li></li>
+				<li id="logo"><img src="images/logo.png" alt="Unreal Designs"></li>
+				<li ng-repeat="i in [1,2]"></li>
+				<li ng-repeat="link in data.headerLinks" ng-click="goTo(link.href)">{{link.title}}</li>
+				<li></li>
+			</ul>
+		</header>
+	</div>
+
+	<div id="coverWrap">
+		<div id="cover" class="content">
+			<div id="coverImg">
+				<img src="images/mobile_large.png" alt="Main Image">
+			</div>
+
+			<ul id="services">
+				<li ng-repeat="i in [1,2]"></li>
+				<li ng-repeat="service in data.services">
+					<div class="service">
+						<img src="{{service.img}}"></img>
+						<span class="desc">{{service.title}}<span>
+					</div>
+				</li>
+				<li ng-repeat="i in [1,2]"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="introWrap">
+		<div id="intro" class="content">
+			<h2>{{data.intro.title}}</h2>
+			<img src="placeholder.png" alt="Introduction">
+			<p>
+				{{data.intro.desc}}
+			</p>
+		</div>
+	</div>
+
+	<div id="productWrap">
+		<ul id="products" class="content">
+			<li></li>
+			<li ng-repeat="product in data.products">
+				<div class="face front">{{product.front}}</div>
+				<!-- <div class="face back">{{product.back}}</div> -->
+			</li>
+			<li></li>
+		</ul>
+	</div>
+
+	<div id="aboutWrap">
+		<div id="about" class="content">
+			<h2>{{data.about.title}}</h2>
+			<img src="placeholder.png" alt="About US">
+			<p>
+				{{data.about.desc}}
+			</p>
+		</div>
+	</div>
+
+	<div id="teamWrap">
+		<div id="team" class="content">
+			<h2>Our Team</h2>
+		</div>
 	</div>
 
 	<div id="footerWrap">
-		<hr>
-		Copyright 2013 Unreal Designs
+		<footer id="footer" class="content">
+			<ul id="sections">
+				<li><img class="logo" src="images/logo.png" alt="Unreal Designs"></li>
+				<li class="address"><h3> Address </h3> dummy text heredummy text heredummy text heredummy text here</li>
+				<li class="contact">
+					<h3>Contact US</h3> 
+					<button> Email US </button>
+					<br>
+					<ul class="social">
+						<li>F</li>
+						<li>T</li>
+						<li>P</li>
+					</ul>
+				</li>
+				<li>
+					<h3>LEGAL</h3>
+					<br>
+					<ul class="legal">
+						<li>Terms</li>
+						<li>Privacy Policy</li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
 	</div>
 </div>
